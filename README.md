@@ -7,10 +7,10 @@ GNS3 isn't just a tool—it's a community, a learning hub, and a playground for 
 
 What You'll Find Here
 
-    🔰Step-by-Step Guides: Detailed tutorials on setting up various network topologies.
-    🔰Troubleshooting Diaries: Real-world challenges encountered and the solutions that saved the day.
-    🔰Simulation Walkthroughs: Deep dives into specific network configurations and their applications.
-    🔰Tech Insights: Insights into the latest trends and best practices in networking.
+🔰Step-by-Step Guides: Detailed tutorials on setting up various network topologies.
+🔰Troubleshooting Diaries: Real-world challenges encountered and the solutions that saved the day.
+🔰Simulation Walkthroughs: Deep dives into specific network configurations and their applications.
+🔰Tech Insights: Insights into the latest trends and best practices in networking.
 
 Join me on this journey as I unravel the layers of networking, one packet at a time. Whether you're here to learn, contribute, or simply explore, I hope you find inspiration and knowledge within these lines.
 
