@@ -33,6 +33,7 @@ ip address 1.1.1.1 255.255.255.0
 no shutdown
 exit
 
+config t
 interface loopback 0
 ip address 192.168.1.1 255.255.255.0
 exit
