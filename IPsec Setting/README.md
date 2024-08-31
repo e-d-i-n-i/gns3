@@ -25,7 +25,7 @@ This guide will walk you through setting up a network topology in GNS3 to config
 
 4. **Navigate to Configuration Directories**:
 
-   - After setting up the topology, navigate to the `part 1` and `part 2` directories in the main folder of your project.
+   - After setting up the topology, navigate to the `part 1` and `part 2` directories in the main folder of this project.
    - In these directories, you will find detailed instructions and configuration files required to complete the IPsec setup.
      - **Part 1**: Contains the initial configurations for the routers.
      - **Part 2**: Includes the IPsec configuration steps and final adjustments.
