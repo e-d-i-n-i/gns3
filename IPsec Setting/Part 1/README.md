@@ -53,7 +53,7 @@ ip address 1.1.1.2 255.255.255.0
 no shutdown
 exit
 
-interface fa1/0
+interface fa0/1
 ip address 2.2.2.2 255.255.255.0
 no shutdown
 exit
