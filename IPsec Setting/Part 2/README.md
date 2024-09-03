@@ -103,7 +103,7 @@ R3(config-if)# exit
 2. **Test Connectivity**:
    - On **Router R1**:
      ```bash
-     R1# ping 172.16.3.3 source loopback 0 #Should succeed
+     R1# ping 172.16.3.3 source loopback 0
      ```
 
 ## What to Observe
