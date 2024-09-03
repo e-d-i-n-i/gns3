@@ -42,9 +42,6 @@ ip address 10.11.11.1 255.255.255.0
 tunnel source 1.1.1.1
 tunnel destination 2.2.2.3
 exit
-
-ip route 0.0.0.0 0.0.0.0 1.1.1.2
-exit
 ```
 
 ### On R2:
@@ -86,6 +83,12 @@ exit
 
 ```bash
 ip route 0.0.0.0 0.0.0.0 1.1.1.2
+```
+
+### On R3:
+
+```bash
+ip route 0.0.0.0 0.0.0.0 2.2.2.2
 ```
 
 ## 4. Verify Connectivity
