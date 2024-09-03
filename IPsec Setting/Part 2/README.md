@@ -117,9 +117,14 @@ R3(config-if)# exit
      - You should see packets labeled as **ESP (Encapsulating Security Payload)**, which indicates that the traffic is encrypted.
      - The **Info** column should show "ESP" instead of the higher-level protocols like ICMP, indicating that the ping request and response are being encrypted.
 
+   ![alt text](image-1.png)
+
 4. **Detailed View**:
+
    - Click on any of the ESP packets and expand the **Internet Protocol Security** section in Wireshark.
    - You won't be able to see the inner contents of the packet (like the ICMP echo request and reply) because they are encrypted. This lack of visibility confirms that the traffic is encrypted.
+
+   ![alt text](image-2.png)
 
 ## What to Observe
 
