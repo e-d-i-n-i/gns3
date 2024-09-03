@@ -97,6 +97,7 @@ R3(config-if)# exit
 1. **Start Packet Capture**:
 
    - On **Router R3**: Right-click on the `fa0/0` interface and select "Start Capture".
+
      ![alt text](image.png)
 
 2. **Test Connectivity**:
