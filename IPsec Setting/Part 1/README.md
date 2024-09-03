@@ -83,12 +83,14 @@ exit
 
 ```bash
 ip route 0.0.0.0 0.0.0.0 1.1.1.2
+exit
 ```
 
 ### On R3:
 
 ```bash
 ip route 0.0.0.0 0.0.0.0 2.2.2.2
+exit
 ```
 
 ## 4. Verify Connectivity
