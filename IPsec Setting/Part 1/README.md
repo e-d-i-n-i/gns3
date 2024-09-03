@@ -150,5 +150,3 @@ ping 192.168.1.1 source loopback 0  # Should succeed
 ```
 
 ---
-
-This format organizes the commands by task, removes any unnecessary lines, and corrects a couple of minor issues in the original commands.
