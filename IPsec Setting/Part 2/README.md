@@ -130,5 +130,3 @@ R3(config-if)# exit
 
 - **Encrypted Packets**: If IPsec is correctly configured, all packets between the routers that should be secured will appear as ESP packets in the capture, indicating that the data is encrypted.
 - **No Cleartext Data**: The ping responses and requests will not be visible as regular ICMP packets, confirming that the communication is being encrypted by IPsec.
-
----
