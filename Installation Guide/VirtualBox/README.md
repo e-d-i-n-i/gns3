@@ -49,9 +49,13 @@ Before you begin, make sure you have the following software installed:
 
 1. In VirtualBox, right-click on the GNS3 VM and select `Settings`.
 2. Go to the `Network` tab and ensure that Adapter 1 is set to "Bridged Adapter" or "Host-Only Adapter" (depending on your network requirements).
+
    ![alt text](image-1.png)
+
 3. Go to the `Network` tab and ensure that Adapter 2 is set to "NAT" (depending on your network requirements).
+
    ![alt text](image.png)
+
 4. Click `OK` to save the changes.
 
 ## Step 7: Add Kali Linux VM to VirtualBox
@@ -65,9 +69,13 @@ Before you begin, make sure you have the following software installed:
 
 1. In VirtualBox, right-click on the Kali Linux VM and select `Settings`.
 2. Go to the `Network` tab and ensure that Adapter 1 is set to "Not Attached".
+
    ![alt text](image-2.png)
+
 3. Go to the `Network` tab and ensure that Adapter 2 is set to "NAT".
+
    ![alt text](image-3.png)
+
 4. Click `OK` to save the changes.
 
 ## Step 8: Start and Test the Setup
@@ -80,5 +88,6 @@ Before you begin, make sure you have the following software installed:
 ## Conclusion
 
 Your GNS3 environment is now set up and configured on Windows using VirtualBox, and you have successfully added a Kali Linux VM. You can now start building and testing your network scenarios!
+
 ![alt text](image-4.png)
 ![alt text](image-5.png)
