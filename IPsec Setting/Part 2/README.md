@@ -7,23 +7,23 @@ In this section, we'll configure ISAKMP and IPsec settings on routers R1 and R3 
 On **Router R1**:
 
 ```bash
-R1(config)# crypto isakmp policy 10
-R1(config-isakmp)# hash md5
-R1(config-isakmp)# authentication pre-share
-R1(config-isakmp)# group 2
-R1(config-isakmp)# encryption 3des
-R1(config-isakmp)# exit
+crypto isakmp policy 10
+hash md5
+authentication pre-share
+group 2
+encryption 3des
+exit
 ```
 
 On **Router R3**:
 
 ```bash
-R3(config)# crypto isakmp policy 10
-R3(config-isakmp)# hash md5
-R3(config-isakmp)# authentication pre-share
-R3(config-isakmp)# group 2
-R3(config-isakmp)# encryption 3des
-R3(config-isakmp)# exit
+crypto isakmp policy 10
+hash md5
+authentication pre-share
+group 2
+encryption 3des
+exit
 ```
 
 ## 2. Define Pre-shared Key on a Per Peer Basis on Router R1 & R3
@@ -31,13 +31,13 @@ R3(config-isakmp)# exit
 On **Router R1**:
 
 ```bash
-R1(config)# crypto isakmp key 0 cisco123 address 2.2.2.3
+crypto isakmp key 0 cisco123 address 2.2.2.3
 ```
 
 On **Router R3**:
 
 ```bash
-R3(config)# crypto isakmp key 0 cisco123 address 1.1.1.1
+crypto isakmp key 0 cisco123 address 1.1.1.1
 ```
 
 ## 3. Configure Transform Sets on Router R1 & R3
@@ -45,15 +45,15 @@ R3(config)# crypto isakmp key 0 cisco123 address 1.1.1.1
 On **Router R1**:
 
 ```bash
-R1(config)# crypto ipsec transform-set TSET esp-3des esp-md5-hmac
-R1(config)# exit
+crypto ipsec transform-set TSET esp-3des esp-md5-hmac
+exit
 ```
 
 On **Router R3**:
 
 ```bash
-R3(config)# crypto ipsec transform-set TSET esp-3des esp-md5-hmac
-R3(config)# exit
+crypto ipsec transform-set TSET esp-3des esp-md5-hmac
+exit
 ```
 
 ## 4. Create IPsec Profile on Router R1 & R3
@@ -61,17 +61,17 @@ R3(config)# exit
 On **Router R1**:
 
 ```bash
-R1(config)# crypto ipsec profile GRE-PROFILE
-R1(ipsec-profile)# set transform-set TSET
-R1(ipsec-profile)# exit
+crypto ipsec profile GRE-PROFILE
+set transform-set TSET
+exit
 ```
 
 On **Router R3**:
 
 ```bash
-R3(config)# crypto ipsec profile GRE-PROFILE
-R3(ipsec-profile)# set transform-set TSET
-R3(ipsec-profile)# exit
+crypto ipsec profile GRE-PROFILE
+set transform-set TSET
+exit
 ```
 
 ## 5. Assign IPsec Profile on Tunnel Interfaces
@@ -79,17 +79,17 @@ R3(ipsec-profile)# exit
 On **Router R1**:
 
 ```bash
-R1(config)# interface tunnel 1
-R1(config-if)# tunnel protection ipsec profile GRE-PROFILE
-R1(config-if)# exit
+interface tunnel 1
+tunnel protection ipsec profile GRE-PROFILE
+exit
 ```
 
 On **Router R3**:
 
 ```bash
-R3(config)# interface tunnel 1
-R3(config-if)# tunnel protection ipsec profile GRE-PROFILE
-R3(config-if)# exit
+interface tunnel 1
+tunnel protection ipsec profile GRE-PROFILE
+exit
 ```
 
 ## Verification
@@ -104,7 +104,7 @@ R3(config-if)# exit
 
    - On **Router R1**, run the following command to send a ping from R1's loopback interface to R3:
      ```bash
-     R1# ping 172.16.3.3 source loopback 0
+     ping 172.16.3.3 source loopback 0
      ```
 
 3. **Analyze the Packet Capture**:
